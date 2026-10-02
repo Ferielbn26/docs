@@ -1,0 +1,80 @@
+---
+title: "Population Dynamics Simulation: Model Species Growth"
+sidebarTitle: "Population Dynamics"
+description: "Use EcoLearn's Population Dynamics simulation to model predator-prey relationships, carrying capacity, and the effect of environmental changes on species populations."
+---
+
+The Population Dynamics simulation lets you step into the role of an ecologist studying how animal populations change over time. By adjusting starting conditions and environmental variables, you can watch populations grow, crash, stabilize, or spiral into extinction — and develop an intuitive understanding of the forces that shape the abundance of life in real ecosystems. Whether you're exploring the classic predator-prey cycle for the first time or testing the effects of environmental stressors on a species at the edge of its carrying capacity, this simulation makes abstract population ecology concrete and explorable.
+
+## What This Simulation Models
+
+The Population Dynamics simulation is built around four core ecological concepts:
+
+- **Lotka-Volterra predator-prey dynamics** — the mathematical framework describing how predator and prey populations influence each other in a cyclical relationship. As prey increase, predators have more food and their numbers rise; as predators increase, prey decline; as prey decline, predators follow — and the cycle repeats.
+- **Carrying capacity** — the maximum population size an environment can sustain given its available resources (food, water, space, shelter). When a population approaches its carrying capacity, growth slows and competition intensifies.
+- **Birth and death rates** — the per-individual rates at which organisms reproduce and die each year. These rates determine the underlying trajectory of a population in the absence of other pressures.
+- **Environmental pressures** — external factors such as drought, disease, or habitat loss that can shift birth rates, death rates, or carrying capacity, causing populations to respond in dramatic and sometimes irreversible ways.
+
+## Key Parameters
+
+Before running the simulation, you'll configure the following parameters using on-screen sliders. Each one has a meaningful effect on the outcome, so take a moment to understand what you're setting.
+
+| Parameter          | Description                                                              | Range          |
+|--------------------|--------------------------------------------------------------------------|----------------|
+| Initial Population | The starting number of individuals in each species (predator and prey)   | 10 – 10,000    |
+| Birth Rate         | The reproductive rate of the species, expressed as new individuals per existing individual per year | 0.01 – 2.0 |
+| Death Rate         | The natural mortality rate, expressed as deaths per individual per year  | 0.01 – 1.5     |
+| Predation Rate     | The rate at which predators encounter and consume prey individuals       | 0.001 – 0.5    |
+| Carrying Capacity  | The maximum population the simulated environment can support             | 100 – 50,000   |
+
+## Running the Simulation
+
+<Steps>
+  <Step title="Select a Species Pair">
+    At the top of the simulation screen, choose the predator-prey pair you want to model. Your options are **Wolf / Deer**, **Fox / Rabbit**, or **Shark / Fish**. Each pair comes with ecologically informed default parameter values — you can use these defaults to get started quickly, or override any value before running.
+  </Step>
+  <Step title="Set Your Initial Parameters">
+    Use the sliders and input fields to configure Initial Population, Birth Rate, Death Rate, Predation Rate, and Carrying Capacity for both the predator and prey species. Hover over any label for a tooltip explaining that parameter in plain language.
+  </Step>
+  <Step title="Click Run Simulation">
+    When your parameters are ready, click the **Run Simulation** button. The time-series graph will begin populating, showing population counts for both species on the vertical axis and time (in years) on the horizontal axis.
+  </Step>
+  <Step title="Observe the Population Graph Over Time">
+    Watch how the two population lines interact. Look for the characteristic oscillating pattern of the predator-prey cycle — the prey line peaks, followed shortly after by the predator line, then both decline and the cycle repeats.
+  </Step>
+  <Step title="Use the Speed Slider to Accelerate Time">
+    If you want to fast-forward through the simulation to see long-term trends, drag the **Speed** slider to the right to increase the playback rate. Slow it back down during moments of rapid change to observe them in more detail.
+  </Step>
+  <Step title="Pause and Adjust Parameters Mid-Run">
+    At any point during a run, click **Pause** to freeze the simulation. You can then adjust any parameter and click **Resume** to see how the population responds to the new conditions — simulating an environmental change or conservation intervention in real time.
+  </Step>
+</Steps>
+
+## Interpreting Results
+
+Understanding what the graph is telling you is as important as running the simulation itself. Here's what to look for:
+
+**Oscillating cycles** are the signature pattern of a healthy predator-prey system in balance. The prey population rises, giving predators more food; predators increase and drive prey down; prey scarcity then causes predators to decline; with fewer predators, prey recover — and the cycle starts again. These cycles can be tight and regular or wide and erratic depending on your parameters.
+
+**Population crashes** occur when one or both populations drop to near zero. This can happen when the predation rate is too high, when the carrying capacity is too low relative to the population, or when death rates exceed birth rates over a sustained period. A crash in the prey population almost always triggers a delayed crash in the predator population — a pattern with clear real-world parallels.
+
+**Equilibrium states** emerge when the two populations settle into a stable, non-oscillating balance. This typically occurs with moderate parameter values and a carrying capacity well above the stable population size. In reality, true equilibrium is rare — it represents a useful theoretical baseline rather than a prediction of what you'd observe in the field.
+
+When reviewing your results, pay attention to **the phase lag** between the predator and prey peaks — the delay between when prey peak and when predators peak is a key feature of the Lotka-Volterra model and often surprises first-time users.
+
+<Tip>
+  Try setting the **Predation Rate** to its maximum value (0.5) and running the simulation from default starting populations. You'll likely see the prey population crash rapidly, followed by a collapse of the predator population shortly after — a vivid illustration of how overhunting or over-predation can destabilize an entire system. It's a sobering result, and a powerful way to understand why predation rate is a critical factor in conservation management.
+</Tip>
+
+## Continue Your Learning
+
+Connect your population dynamics results to broader ecological concepts, or test your understanding with a quiz.
+
+<CardGroup cols={2}>
+  <Card title="Food Web Concepts" icon="network-wired" href="/concepts/food-webs">
+    See how the predator-prey relationships you modeled here fit into larger food web structures.
+  </Card>
+  <Card title="Quizzes & Assessments" icon="circle-check" href="/assessments/quizzes">
+    Test your understanding of population ecology with graded and practice quizzes.
+  </Card>
+</CardGroup>

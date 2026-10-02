@@ -1,0 +1,136 @@
+---
+title: "Troubleshoot Technical Issues in EcoLearn"
+sidebarTitle: "Technical Issues"
+description: "Fix common EcoLearn technical problems — including login errors, video playback issues, simulation performance, and browser compatibility — with step-by-step solutions."
+---
+
+This guide covers the most common technical issues EcoLearn users encounter and walks you through how to resolve them quickly. Whether you're having trouble logging in, experiencing choppy video playback, or noticing that your progress isn't saving, you'll find targeted solutions below. If a problem persists after following the steps here, our support team is ready to help.
+
+## System Requirements
+
+Before troubleshooting, verify that your device and connection meet EcoLearn's requirements. Many issues stem from outdated browsers or slow internet connections.
+
+| Requirement      | Minimum                                          | Recommended                  |
+| ---------------- | ------------------------------------------------ | ---------------------------- |
+| Browser          | Chrome 90+ / Firefox 88+ / Safari 14+            | Latest version of any supported browser |
+| Internet Speed   | 5 Mbps                                           | 20 Mbps or faster            |
+| Display          | 1024 × 768                                       | 1920 × 1080                  |
+| Device           | Any modern PC, Mac, or tablet                    | Desktop or laptop             |
+| JavaScript       | Enabled                                          | Enabled                      |
+| Cookies          | Enabled                                          | Enabled                      |
+
+<Tip>
+  You can check your current browser version by going to **Help → About** in your browser menu. Most browsers update automatically, but it's worth confirming you're on the latest version if you're experiencing issues.
+</Tip>
+
+## Login Problems
+
+<Accordion title="I can't log in with my password">
+  If your password isn't working, the quickest fix is to reset it:
+
+  1. On the EcoLearn login page, click **Forgot Password**.
+  2. Enter the email address associated with your account and click **Send Reset Link**.
+  3. Check your inbox (and your spam folder) for an email from **noreply@ecolearn.app**.
+  4. Click the link in the email and follow the prompts to set a new password. The link is valid for **2 hours**.
+
+  If you don't receive the reset email within 5 minutes, double-check that you're using the correct email address. Contact **support@ecolearn.app** if you're still unable to receive the email.
+</Accordion>
+
+<Accordion title="My SSO login isn't working">
+  Single sign-on issues are usually caused by a mismatch between accounts. Try the following:
+
+  1. Confirm that the **Google or Microsoft account** you're using to sign in matches the email address registered with EcoLearn. For example, if you registered as `jane@school.edu`, you must sign in with that exact account.
+  2. If you recently changed your Google or Microsoft email, log in with your EcoLearn password instead and re-link your SSO account under **Account Settings → Connected Accounts**.
+  3. Try signing out of your Google or Microsoft account in your browser, then attempt SSO login again to ensure you're not inadvertently signing in with a different account.
+  4. Disable any browser extensions that might block pop-up windows, as the SSO authorization flow requires a pop-up.
+
+  If the issue persists, unlink and re-link the provider in **Account Settings → Connected Accounts**.
+</Accordion>
+
+<Accordion title="My account is locked">
+  EcoLearn automatically locks an account for **30 minutes** after **5 consecutive failed login attempts** to protect against unauthorized access. You have two options:
+
+  - **Wait it out** — the lock lifts automatically after 30 minutes, after which you can try again.
+  - **Contact support** — email **support@ecolearn.app** with your account email and we can unlock your account immediately.
+
+  Once unlocked, use the **Forgot Password** link to set a new password before attempting to log in, to avoid triggering the lock again.
+</Accordion>
+
+## Video and Media Issues
+
+<Accordion title="Videos won't load">
+  If lesson videos are buffering indefinitely or failing to play, work through these steps in order:
+
+  1. **Check your internet speed** — EcoLearn videos require at least 5 Mbps. Run a speed test at a site like speedtest.net and compare to the requirements above.
+  2. **Disable your VPN** — VPNs can route traffic through servers that are geographically distant from EcoLearn's video delivery network, causing slow or failed loads.
+  3. **Clear your browser cache and cookies** — in Chrome, go to **Settings → Privacy and Security → Clear Browsing Data** and select "Cached images and files" and "Cookies." Then reload the EcoLearn page.
+  4. **Try a different browser** — if videos load in another browser, the issue is specific to your current browser's configuration.
+  5. **Disable browser extensions** — ad blockers and privacy extensions sometimes interfere with video players. Try disabling them temporarily.
+</Accordion>
+
+<Accordion title="No audio on videos">
+  If videos play but have no sound, check these items:
+
+  1. **Device volume** — confirm your system volume is turned up and not muted. Check both your OS volume controls and any physical volume buttons on your device.
+  2. **Browser audio permissions** — browsers can mute individual sites. Click the **speaker icon** in your browser's address bar (if present) and ensure EcoLearn is not muted.
+  3. **Check the video player volume** — the EcoLearn video player has its own volume slider in the playback controls. Make sure it isn't set to zero.
+  4. **Restart your browser** — occasionally a browser session can lose access to audio output. Closing and reopening the browser resolves this.
+</Accordion>
+
+<Accordion title="Simulations lag or freeze">
+  EcoLearn's interactive simulations are graphics-intensive. If you're experiencing lag or freezing, try these optimizations:
+
+  1. **Close other browser tabs** — each open tab consumes memory. Close any tabs you don't need while running a simulation.
+  2. **Use Google Chrome** — Chrome's V8 JavaScript engine and WebGL implementation are optimized for EcoLearn's simulation engine and typically deliver the best performance.
+  3. **Enable hardware acceleration** — in Chrome, go to **Settings → System** and toggle on "Use hardware acceleration when available," then relaunch the browser. In Firefox, go to **Settings → General → Performance** and check "Use hardware acceleration when available."
+  4. **Reduce browser zoom level** — set your browser zoom to 100% (Ctrl+0 / Cmd+0) to reduce rendering load.
+  5. **Restart your device** — if you've been using your device for a long time, a restart can free up memory and improve performance.
+</Accordion>
+
+## Progress Not Saving
+
+If you complete a lesson or simulation and your progress doesn't appear in your dashboard, follow these steps:
+
+<Steps>
+  <Step title="Check Your Internet Connection">
+    Progress is saved in real time to EcoLearn's servers. If your internet drops mid-lesson, progress after the last save point may be lost. Confirm you have a stable connection before continuing.
+  </Step>
+  <Step title="Don't Close the Browser Mid-Lesson">
+    Always use the **Exit** or **Finish** button within EcoLearn rather than closing the browser tab directly. Closing the tab abruptly can cut off the save request before it completes.
+  </Step>
+  <Step title="Use the Save Button in Simulations">
+    Unlike lessons (which save automatically at checkpoints), simulations require you to click the **Save Run** button to preserve your results. Make sure you click **Save Run** before exiting any simulation.
+  </Step>
+  <Step title="Clear Cache and Re-Login">
+    If progress still isn't reflecting in your dashboard after the steps above, clear your browser cache and cookies, then log out and back in. Your dashboard fetches the latest data from the server on each login.
+  </Step>
+</Steps>
+
+<Warning>
+  If clearing your cache and re-logging in does not restore missing progress, contact **support@ecolearn.app** as soon as possible. Include the lesson name, approximate completion time, and your account email. Our team may be able to recover progress from server-side logs.
+</Warning>
+
+## Contacting Support
+
+If you've worked through the relevant steps above and your issue remains unresolved, our support team is here to help.
+
+- **Email:** support@ecolearn.app
+- **Response time:** Within 1 business day
+
+To help us resolve your issue as quickly as possible, please include the following information in your message:
+
+1. Your **account email address**
+2. Your **browser name and version** (e.g., Chrome 124) and **operating system** (e.g., Windows 11, macOS Sonoma)
+3. A **screenshot or screen recording** showing the error or unexpected behavior
+4. The **steps you took** leading up to the issue, so our team can attempt to reproduce it
+
+---
+
+<CardGroup cols={2}>
+  <Card title="FAQ" icon="circle-question" href="/help/faq">
+    Browse answers to common questions about lessons, billing, educator tools, and more.
+  </Card>
+  <Card title="Account Management" icon="gear" href="/help/account-management">
+    Manage your profile, update your credentials, and control your notification settings.
+  </Card>
+</CardGroup>

@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "EcoLearn",
+  "projectDescription": "An interactive web-based platform for ecology education, offering lessons, simulations, and assessments to help students and educators explore ecosystems, biodiversity, and environmental science.",
   "theme": "almond",
-  "name": "EcoLearn",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@ecolearn.app"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Start Learning",
-      "href": "https://app.ecolearn.app"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -117,10 +98,21 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/ecolearn",
-      "github": "https://github.com/ecolearn"
-    }
-  }
+  "keyFeatures": [
+    "Interactive ecology lessons covering terrestrial, aquatic, and urban ecosystems",
+    "Real-time population dynamics and habitat change simulations",
+    "Standards-aligned curriculum for K-12 and higher education",
+    "Educator dashboard for class management, assignments, and grading",
+    "Progress tracking and adaptive assessments for students",
+    "Custom content creation tools for educators",
+    "Biodiversity explorer with species identification and data",
+    "Carbon cycle and food web visualizations"
+  ],
+  "publicApiSurface": [
+    "Student enrollment and progress API",
+    "Lesson content and module retrieval",
+    "Assessment submission and scoring",
+    "Class and roster management",
+    "Simulation parameter configuration"
+  ]
 }
